@@ -1,2 +1,46 @@
 # calculo-salario-python
 El programa resuelve la necesidad de automatizar el cálculo del salario semanal de un trabajador a partir de sus jornadas laboradas. Para ello, recibe como entradas la cantidad de horas trabajadas en la semana y la tarifa económica fijada por hora. 
+
+#FUNCION calcular Salario(horas Trabajadas, tarifa Hora)
+#salario Total - horas Trabajadas * tarifa Hora
+#RETORNAR salario Total
+
+#// Bloque Principal
+#Definir horas Como Real
+#Definir tarifa Como Real
+#Definir resultado Como Real
+
+#horas <- 40.0
+#tarifa <- 12.50
+
+#resultado - calcular Salario (horas, tarifa)
+#IMPRIMIR "El salario total es: " + resultado
+
+# ==============================================================================
+
+def calcular_salario_semanal(horas_trabajadas: float, tarifa_por_hora: float) -> float:
+    """
+    Función que recibe dos parámetros:
+    - horas_trabajadas: Cantidad de horas laboradas en la semana.
+    - tarifa_por_hora: Pago correspondiente por cada hora trabajada.
+    
+    Retorna el salario total multiplicando ambos parámetros.
+    """
+    salario_total = horas_trabajadas * tarifa_por_hora
+    return salario_total
+
+if __name__ == "__main__":
+   
+    horas_semana = 40.0
+    tarifa_hora = 12.50
+
+    salario_final = calcular_salario_semanal(horas_semana, tarifa_hora)
+
+    print("----------------------------------------")
+    print("     CÁLCULO DE SALARIO SEMANAL         ")
+    print("----------------------------------------")
+    print(f"Horas trabajadas en la semana: {horas_semana} horas")
+    print(f"Tarifa aplicada por hora:      ${tarifa_hora:.2f}")
+    print("----------------------------------------")
+    print(f"Salario semanal total a pagar: ${salario_final:.2f}")
+    print("----------------------------------------")
